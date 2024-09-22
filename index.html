@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tchicaya Makosso Laurent</title>
+    <!-- Liens vers les feuilles de style Bootstrap 4, CSS personnalisé, Tailwind CSS, et icônes -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Styles CSS améliorés et rendus responsives pour tous les appareils */
+        /* Style pour la bannière avec une image de fond */
+        
+        .banner {
+            /* Votre image de bannière actuelle */
+            background-image: url('A.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Hauteur ajustée pour être responsive */
+            position: relative;
+            text-align: center;
+            color: #fff;
+            animation: backgroundAnimation 30s linear infinite;
+        }
+        
+        @keyframes backgroundAnimation {
+            20% {
+                background-image: url('B.jpg');
+            }
+            25% {
+                background-image: url('c.jpeg');
+            }
+            30% {
+                background-image: url('D.jpg');
+            }
+            35% {
+                background-image: url('E.jpg');
+            }
+            40% {
+                background-image: url('F.jpeg');
+            }
+            45% {
+                background-image: url('G.jpeg');
+            }
+            50% {
+                background-image: url('H.jpeg');
+            }
+            55% {
+                background-image: url('I.jpeg');
+            }
+            60% {
+                background-image: url('U.jpeg');
+            }
+            65% {
+                background-image: url('L.jpeg');
+            }
+            70% {
+                background-image: url('M.jpeg');
+            }
+            75% {
+                background-image: url('N.jpeg');
+            }
+            80% {
+                background-image: url('Q.jpeg');
+            }
+            85% {
+                background-image: url('U.jpeg');
+            }
+            90% {
+                background-image: url('dr heart.jpeg');
+            }
+            95% {
+                background-image: url('Dental surgery.jpeg');
+            }
+            100% {
+                background-image: url('0.jpeg');
+            }
+            100% {
+                background-image: url('#hijabi\ #hijabiaesthetic\ #friends\ #muslim\ #islam\ #aesthetic\ #abaya\ #dress\ #summer\ #summerdress\ #summerstyle\ #summeroutfitideas\ #beach\ #medical\ #medicine\ #doctor\ #medicineaesthetic_.jpeg');
+            }
+            100% {
+                background-image: url('/88e0949af42761bb921a55f2c9e6e38f.jpg');
+            }
+            
+            
+        }
+        /* Ajoutez cette animation à votre feuille de style CSS */
+        
+        .about-section {
+            animation: backgroundAnimation 30s linear infinite;
+        }
+        
+        .about-section img {
+            /* Styles pour l'image du Dr. Tchicaya Makosso */
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .about-section img:hover {
+            transform: scale(1.05);
+        }
+        
+        .banner h1,
+        .banner p {
+            animation: fadeInUp 1s ease-in-out;
+            opacity: 0;
+            position: absolute;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .banner h1:hover,
+        .banner p:hover {
+            transform: scale(1.05);
+        }
+        
+        .banner h1 {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            color: #007bff;
+            /* Couleur du titre de la bannière */
+        }
+        
+        .banner p {
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+        }
+        /* Style pour les icônes de médias sociaux */
+        
+        .social-icons a {
+            font-size: 32px;
+            margin-right: 20px;
+            color: #007bff;
+            /* Couleur des icônes */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.05);
+        }
+        
+        .service-icon {
+            font-size: 48px;
+            color: #28a745;
+            /* Couleur de l'icône de service */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .service-icon:hover {
+            transform: scale(1.05);
+        }
+        
+        .contact-info {
+            font-size: 18px;
+        }
+        /* Ajoutez des animations et des transitions selon vos préférences */
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Styles pour le footer */
+        
+        footer {
+            background-color: #343a40;
+            /* Couleur de fond du footer */
+            color: #fff;
+            /* Couleur du texte du footer */
+            text-align: center;
+            padding: 20px;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        footer:hover {
+            transform: scale(1.05);
+        }
+        
+        footer svg {
+            width: 30px;
+            height: 30px;
+            fill: #fff;
+            /* Couleur des icônes du footer */
+            margin: 0 5px;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        footer svg:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour la barre de navigation */
+        
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            /* Couleur de fond de la barre de navigation */
+            color: #fff;
+            /* Couleur du texte de la barre de navigation */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .navbar:hover {
+            transform: scale(1.05);
+        }
+        
+        .navbar-brand {
+            font-size: 28px;
+            /* Taille de la police du logo/nom de la clinique */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .navbar-brand:hover {
+            transform: scale(1.05);
+        }
+        
+        .navbar-toggler-icon {
+            background-color: #fff;
+            /* Couleur de l'icône du bouton de navigation mobile */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .navbar-toggler-icon:hover {
+            transform: scale(1.05);
+        }
+        
+        .nav-link {
+            font-size: 18px;
+            /* Taille de la police des liens de navigation */
+            color: #fff;
+            /* Couleur du texte des liens de navigation */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .nav-link:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour les cartes de services */
+        
+        .card {
+            border: none;
+            /* Suppression de la bordure des cartes */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-title {
+            font-size: 24px;
+            /* Taille de la police du titre de la carte de service */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .card-title:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-text {
+            font-size: 18px;
+            /* Taille de la police du texte de la carte de service */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .card-text:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour les liens de réseaux sociaux dans la section "À propos" */
+        
+        .social-icons a {
+            font-size: 32px;
+            /* Taille de la police des icônes de réseaux sociaux */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour les liens de réseaux sociaux dans le footer */
+        
+        footer a {
+            color: #fff;
+            /* Couleur des liens dans le footer */
+            text-decoration: none;
+            /* Suppression du soulignement des liens dans le footer */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        footer a:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour le lien du site Web de la clinique dans le footer */
+        
+        footer .clinic-website-link {
+            color: #28a745;
+            /* Couleur du lien du site Web de la clinique */
+            font-weight: bold;
+            /* Texte en gras pour le lien du site Web de la clinique */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        footer .clinic-website-link:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour le passage biblique */
+        
+        .bible-verse {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #007bff;
+            /* Couleur du texte du passage biblique */
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .bible-verse:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour la section de défilement d'images */
+        
+        .image-slider {
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .image-slider:hover {
+            transform: scale(1.05);
+        }
+        
+        .slick-prev,
+        .slick-next {
+            font-size: 30px;
+            color: #007bff;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .slick-prev:hover,
+        .slick-next:hover {
+            transform: scale(1.05);
+        }
+        
+        .slick-dots li button {
+            font-size: 12px;
+            background-color: #007bff;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .slick-dots li button:hover {
+            transform: scale(1.05);
+        }
+        
+        .slick-dots li.slick-active button {
+            background-color: #28a745;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .slick-dots li.slick-active button:hover {
+            transform: scale(1.05);
+        }
+        /* Style pour le curseur personnalisé */
+        
+        .custom-cursor {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            background-color: #007bff;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: cursorAnimate 0.5s ease-in-out infinite;
+            transform-origin: center;
+            opacity: 0;
+            z-index: 9999;
+            /* Ajout d'un effet de zoom sur mouseover */
+            transition: transform 0.5s ease;
+        }
+        
+        .custom-cursor.active {
+            opacity: 0.7;
+            transform: scale(1.05);
+        }
+        
+        @keyframes cursorAnimate {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Curseur personnalisé amélioré -->
+    <div class="custom-cursor-improved"></div>
+
+    <!-- Barre de navigation Bootstrap améliorée -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dr. Tchicaya Makosso Laurent</a>
+            <img src="j.png" alt="Logo de la santé" width="50" class="rounded-circle">
+            <!-- Remplacez par le logo de la santé -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.clinique-guenin.com/index.html" target="_blank">Visitez
+                            notre
+                            site</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bannière avec image de fond améliorée -->
+    <header class="banner text-white text-center py-5">
+        <div class="container">
+            <h1 class="text-4xl animate__animated animate__fadeInUp">Dr. Tchicaya Makosso Laurent</h1>
+            <p class="text-lg animate__animated animate__fadeInUp">Chirurgien expérimenté avec plus de 25 ans de service</p>
+        </div>
+    </header>
+
+    <!-- À propos -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="animate__animated animate__fadeInUp">À propos de moi</h2>
+                    <p class="animate__animated animate__fadeInUp">Je suis un médecin généraliste spécialisé en chirurgie avec plus de 25 ans d'expérience. Je suis spécialisé dans les césariennes et d'autres procédures chirurgicales.
+                    </p>
+                    <!-- Ajouter les liens vers les réseaux sociaux avec des icônes améliorées -->
+                    <div class="social-icons animate__animated animate__fadeInUp">
+                        <a href="#" class="text-primary"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-primary"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="text-primary"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/laurenttchicaya/" class="text-primary"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Ajoutez une image en ligne pour Dr. Tchicaya Makosso -->
+                    <img src="OIF.jpeg" alt="Dr. Tchicaya Makosso" class="img-fluid rounded-circle animate__animated animate__fadeInUp">
+                </div>
+            </div>
+            <div class="bible-verse animate__animated animate__fadeInUp">
+                <p class="mt-4"><strong>"Car je connais les projets que j'ai formés sur vous, dit l'Éternel, projets de
+                        paix et non de malheur, afin de vous donner un avenir et de l'espérance." - Jérémie 29:11</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeInUp">Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="p-4 text-center border border-gray-300 rounded-lg animate__animated animate__fadeInUp">
+                    <i class="fas fa-stethoscope service-icon text-green-600"></i>
+                    <h5 class="text-xl font-semibold">Chirurgie générale</h5>
+                    <p class="mt-2">Des procédures chirurgicales générales de haute qualité.</p>
+                </div>
+                <div class="p-4 text-center border border-gray-300 rounded-lg animate__animated animate__fadeInUp">
+                    <i class="fas fa-baby service-icon text-green-600"></i>
+                    <h5 class="text-xl font-semibold">Césariennes</h5>
+                    <p class="mt-2">Spécialisé dans les césariennes pour une expérience sûre et confortable.</p>
+                </div>
+                <div class="p-4 text-center border border-gray-300 rounded-lg animate__animated animate__fadeInUp">
+                    <i class="fas fa-plus service-icon text-green-600"></i>
+                    <h5 class="text-xl font-semibold">Autres services</h5>
+                    <p class="mt-2">D'autres procédures chirurgicales et services médicaux disponibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Défilement d'images -->
+    <section class="image-slider">
+        <div class="container">
+            <h3 class="text-center animate__animated animate__fadeInUp">Expérience de guérison</h3>
+            <div class="slick-carousel">
+                <div><img src="istockphoto-1162543608-612x612.jpg" alt="Image 1" class="img-fluid"></div>
+                <div><img src="istockphoto-1315129854-612x612.jpg" alt="Image 2" class="img-fluid"></div>
+                <div><img src="E.jpg" alt="Image 3" class="img-fluid"></div>
+                <div><img src="D.jpg" alt="Image 4" class="img-fluid"></div>
+                <div><img src="c.jpeg" alt="Image 5" class="img-fluid"></div>
+                <div><img src="le-metier-de-chirurgien-robotique.jpg" alt="Image 6" class="img-fluid"></div>
+                <div><img src="rrrrr.jpg" alt="Image 7" class="img-fluid"></div>
+                <div><img src="" alt="Image 8" class="img-fluid"></div>
+                <div><img src="M.jpg" alt="Image 9" class="img-fluid"></div>
+                <div><img src="S.jpg" alt="Image 10" class="img-fluid"></div>
+                <!-- Ajoutez plus d'images ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center animate__animated animate__fadeInUp">Contact</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="animate__animated animate__fadeInUp">Coordonnées</h4>
+                    <p class="contact-info animate__animated animate__fadeInUp"><strong>Email :</strong> laurenttchic@gmail.com</p>
+                    <p class="contact-info animate__animated animate__fadeInUp"><strong>Téléphone :</strong> 05-557-72-31</p>
+                    <!-- Ajoutez d'autres informations sur la clinique ici -->
+                    <p class="contact-info animate__animated animate__fadeInUp"><strong>Adresse de la clinique :</strong> 123, Rue de la Santé, Ville
+                    </p>
+                    <p class="contact-info animate__animated animate__fadeInUp"><strong>Site Web de la clinique :</strong> <a href="http://www.clinique-guenin.com/" target="_blank">www.clinique-guenin.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Site créé par Tchicaya Mackly Loick</p>
+                    <p>Contact : <a href="mailto:tchicaya.mackly@gmail.com">tchicaya.mackly@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap 4, jQuery, Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Ajouter vos scripts JavaScript personnalisés ici
+        $(document).ready(function() {
+            // Animation de fade-in pour les éléments avec la classe "animate-fade-in"
+            $(".animate-fade-in").each(function(index) {
+                $(this).delay(200 * index).queue(function() {
+                    $(this).addClass("fadeInUp").dequeue();
+                });
+            });
+
+            // Configuration du défilement d'images avec Slick Carousel
+            $(".slick-carousel").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '<i class="fas fa-chevron-left"></i>',
+                nextArrow: '<i class="fas fa-chevron-right"></i>',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                customPaging: function(slider, i) {
+                    return '<button class="slick-dot"></button>';
+                },
+                // Ajout de la fonctionnalité de pause sur mouseover
+                onBeforeChange: function(slider, currentSlide, nextSlide) {
+                    slider.slickPause();
+                },
+                onAfterChange: function(slider, currentSlide) {
+                    slider.slickPlay();
+                }
+            });
+
+            // Curseur personnalisé avec fonctionnalité de changement de taille sur mouseover
+            const cursor = document.querySelector(".custom-cursor");
+
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.top = e.pageY + "px";
+                cursor.style.left = e.pageX + "px";
+            });
+
+            document.querySelectorAll("a, button, .nav-link").forEach((element) => {
+                element.addEventListener("mouseover", () => {
+                    cursor.classList.add("active");
+                    cursor.style.transform = "scale(1.5)";
+                });
+                element.addEventListener("mouseout", () => {
+                    cursor.classList.remove("active");
+                    cursor.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
